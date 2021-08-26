@@ -8,13 +8,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText username, password;
     Button login;
+    //create hashmap with username and password
+    Map<String,String> credentials =  new HashMap<String,String>();
 
+    //grab the username from the api and set up random passwords and save those to loacl computer
+    //check using this map to validate user information in login page.
+    //pass in the usernmae, id, name as an intent or pass in to mainactivity to display that informaiton.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
