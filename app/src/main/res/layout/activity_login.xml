@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#964B00">
 
     <TextView
         android:id="@+id/projname"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="45dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colorAccent"
         android:text="SoloProject" />
 
     <EditText
@@ -18,6 +23,7 @@
         android:layout_height="wrap_content"
         android:hint="Username"
         android:id="@+id/username"
+        android:background="@color/colorAccent"
         android:inputType="textEmailAddress"
         android:layout_marginTop="25dp"
         android:padding="10dp"/>
@@ -29,8 +35,10 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:id="@+id/password"
+        android:background="@color/colorAccent"
         android:inputType="textPassword"
         android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
         android:padding="10dp"/>
 
     <Button

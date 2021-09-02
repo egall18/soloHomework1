@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">hw1solo</string>
+    <string name="red">#FF0000</string>
 </resources>
