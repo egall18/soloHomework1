@@ -59,16 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 String welcome = "";
                 welcome += "WELCOME BACK " + name + " also known as " + user_name + "\n\n";
                 textViewResult.append(welcome);
-
                 for (Post post : posts) {
-                    String content = "";
-                    if (id == post.getId()) {
+                    if (id == post.getUserId()) {
+                        String content = "";
                         content += "ID: " + post.getId() + "\n";
                         content += "User ID: " + post.getUserId() + "\n";
                         content += "Title: " + post.getTitle() + "\n";
                         content += "Text: " + post.getText() + "\n\n";
                         textViewResult.append(content);
-                        break;
                     }
                 }
             }
